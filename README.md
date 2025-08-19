@@ -29,5 +29,5 @@
 ---
 
 ## **功能解說案例 ✨**
-[**主 UI 清單畫面**](lib/page/first_page.dart)  [**主清單畫面控制器**](lib/controller/first_controller.dart) 顯示Api清單內容 判斷檔案是否在本地 更改 icon 樣式 處理不同邏輯 是該下載還是進入播放頁面 , 透過scroll 監聽 是否該觸底加載 並設定set取消有機率重複和上限
+* [**主 UI 清單畫面**](lib/page/first_page.dart)  [**主清單畫面控制器**](lib/controller/first_controller.dart) 顯示Api清單內容 判斷檔案是否在本地 更改 icon 樣式 處理不同邏輯 是該下載還是進入播放頁面 , 透過scroll 監聽 是否該觸底加載 並設定set取消有機率重複和上限
 ---
