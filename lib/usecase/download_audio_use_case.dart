@@ -1,13 +1,14 @@
 import 'dart:io';
 
-import 'package:dio/dio.dart';
+import 'package:audio_test/repository/download_file.dart';
 import 'package:path_provider/path_provider.dart';
 
 
 
 class DownloadAudioUseCase {
+  var downloadFile = DownloadFile();
   Future<String?> execute(String id, String url) async {
-    final Dio _dio = Dio();
+
     try {
       final Directory appDocDir = await getApplicationDocumentsDirectory();
       final String appDocPath = appDocDir.path;
@@ -22,7 +23,7 @@ class DownloadAudioUseCase {
         return localPath;
       } else {
         print('檔案不存在，開始下載...');
-        await _dio.download(url, localPath);
+        await downloadFile.download(url, localPath);
         print('下載完成：$localPath');
         return localPath;
       }
