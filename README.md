@@ -14,18 +14,23 @@
 
 ## **資料結構與分層範例 ✨**
 
-範例分層，使用 **dataclass** 定義資料模型（`Note`、`Tag`、`Note_Tag`。 **repository 實作**中提供具體邏輯。**UseCase** 業務邏輯口，隔離了 UI 與資料。
+範例分層，使用 **dataclass** 定義資料模型。 **repository 實作**中提供具體邏輯。**UseCase** 業務邏輯口，隔離了 UI 與資料 **enum** 宣告 特殊字串。
 
-* [**資料模型 (data class)**](lib/data/)
-* [**抽象類別 (interfaces)**](lib/abstract_calss/)
-* [**Repository 實作**](lib/repository/)
-* [**UseCase 業務邏輯**](lib/use_case/node_repository_use_case.dart)
-
+* [**Api 回來的data 細項**](lib/data/audio_data.dart)
+* [**Api 回來的data 主**](lib/data/audio_list_data.dart)
+* [**Repository 下載檔案api層**](lib/repository/download_file.dart)
+* [**Repository 獲取audio list api層**](lib/repository/get_audio.dart)
+* [**UseCase 判斷該檔案是否存在本地 邏輯層**](lib/use_case/check_audio_exist_use_case.dart)
+* [**UseCase 下載檔案 邏輯層**](lib/use_case/download_audio_use_case.dart)
+* [**UseCase 獲取audio list 邏輯層**](lib/use_case/get_audio_use_case.dart)
+* [**UseCase 播放音樂 邏輯層**](lib/use_case/play_audio_use_case.dart)
+* [**enum api 特殊字串宣告**](lib/enum/language.dart)
+  
 ---
 
-## **功能測試案例 ✨**
+## **功能解說案例 ✨**
 
-為了驗證不同資料來源下的功能正確性，我們設計了針對本地 (Local) 和遠端 (Remote) Repository 的測試。每個 Repository 都包含了其核心的三種功能的測試，確保其在不同環境下的穩定性。
+
 
 * [**本地 Repository 測試 (3 個 function test success)**](test/local_note_repository_test.dart)
 * [**遠端 Repository 測試 (3 個 function test success)**](test/remote_note_repository_test.dart)
