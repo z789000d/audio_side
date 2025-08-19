@@ -29,10 +29,5 @@
 ---
 
 ## **功能解說案例 ✨**
-
-
-
-* [**本地 Repository 測試 (3 個 function test success)**](test/local_note_repository_test.dart)
-* [**遠端 Repository 測試 (3 個 function test success)**](test/remote_note_repository_test.dart)
-
+[**主 UI 清單畫面**](lib/page/first_page.dart)  [**主清單畫面控制器**](lib/controller/first_controller.dart) 顯示Api清單內容 判斷檔案是否在本地 更改 icon 樣式 處理不同邏輯 是該下載還是進入播放頁面 , 透過scroll 監聽 是否該觸底加載 並設定set取消有機率重複和上限
 ---
