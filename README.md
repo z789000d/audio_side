@@ -29,5 +29,7 @@
 ---
 
 ## **功能解說案例 ✨**
-* [**主 UI 清單畫面**](lib/page/first_page.dart)  [**主清單畫面控制器**](lib/controller/first_controller.dart) 顯示Api清單內容 判斷檔案是否在本地 更改 icon 樣式 處理不同邏輯 是該下載還是進入播放頁面 , 透過scroll 監聽 是否該觸底加載 並設定set取消有機率重複和上限
+* [**主 UI 清單畫面**](lib/page/first_page.dart)  [**主清單畫面控制器**](lib/controller/first_controller.dart) 顯示Api清單內容 判斷檔案是否在本地 更改 icon 樣式 處理不同邏輯 是該下載還是進入播放頁面 , 透過scroll 監聽 是否該觸底加載 並設定set取消有機率重複和
+* [**播放畫面**](lib/page/audio_page.dart) [**播放畫面控制器**](lib/controller/audio_page_controller.dart) 將 audio 傳遞至 播放畫面後 透過 audioplayers 進行加載本地mp3 並且透過 listenToPlayerStreams 監聽 播放狀態 時間 總時 內容 顯示在畫面上 
+  
 ---
